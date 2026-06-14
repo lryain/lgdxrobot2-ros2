@@ -79,7 +79,7 @@ launch_args = [
   ),
   DeclareLaunchArgument(
     name='lidar_model', 
-    default_value='c1', 
+    default_value='a2m7', 
     description='RPLIDAR model name.'
   ),
   DeclareLaunchArgument(

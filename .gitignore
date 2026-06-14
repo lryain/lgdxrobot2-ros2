@@ -10,3 +10,6 @@ log/*
 *.dae_history.log
 *.blend1
 *.vscode
+
+*.pdf
+docs

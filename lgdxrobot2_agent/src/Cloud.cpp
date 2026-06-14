@@ -24,7 +24,7 @@ Cloud::Cloud(rclcpp::Node::SharedPtr node, std::shared_ptr<CloudSignals> cloudSi
 void Cloud::PublishRobotData(const McuData &mcuData)
 {
   lgdxrobot_cloud_msgs::msg::RobotData robotData;
-  robotData.hardware_emergency_stop_enabled = mcuData.hardware_emergency_stop_enabled | mcuData.bettery_low_emergency_stop_enabled;
+  robotData.hardware_emergency_stop_enabled = mcuData.hardware_emergency_stop_enabled | mcuData.battery_low_emergency_stop_enabled;
   robotData.batteries_voltage = {mcuData.battery1.voltage, mcuData.battery2.voltage};
   robotDataPublisher->publish(robotData);
 }
