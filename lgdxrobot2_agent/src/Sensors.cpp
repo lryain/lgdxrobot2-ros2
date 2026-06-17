@@ -154,7 +154,7 @@ void Sensors::Publish(const McuData& mcuData)
     system.battery2.current = mcuData.battery2.current;
     system.software_emergency_stop_enabled = mcuData.software_emergency_stop_enabled;
     system.hardware_emergency_stop_enabled = mcuData.hardware_emergency_stop_enabled;
-    system.bettery_low_emergency_stop_enabled = mcuData.bettery_low_emergency_stop_enabled;
+    system.battery_low_emergency_stop_enabled = mcuData.battery_low_emergency_stop_enabled;
     systemPublisher->publish(system);
   }
   
